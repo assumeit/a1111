@@ -1,0 +1,338 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.App {
+  text-align: center;
+}
+/* Navbar Styling */
+.navbar {
+  background-color: #003f72; /* RBC Blue */
+  border-bottom: 2px solid #FFD100; /* Gold border */
+  padding: 10px 20px; /* Ensure sufficient padding */
+}
+
+.navbar-brand img {
+  height: 80px; /* Adjust logo height */
+  width: auto; /* Maintain aspect ratio */
+  margin-left: 80px; /* Add space between logo and text */
+  vertical-align: middle; /* Vertically center the logo */
+ 
+  
+  padding: 0; /* Remove padding if you don't want extra space */
+}
+
+.navbar-brand {
+  display: flex; /* Make brand content flexible */
+  align-items: center; /* Vertically align logo and text */
+}
+
+.navbar-brand span {
+  font-size: 20px; /* Adjust text size */
+  font-weight: bold;
+  color: #fff; /* Ensure text color is white */
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FFD100 !important;
+}
+
+.sign-in-button {
+  background-color: #FFD100;
+  color: #005DAA;
+  border: none;
+  font-weight: bold;
+  margin-left: 10px; /* Adjust this value to move it to the left */
+  margin-right: 40px;
+  padding: 10px 24px; /* Increase padding to make the button rectangular */
+  border-radius: 0; /* Remove rounded corners to make it rectangular */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sign-in-button:hover {
+  background-color: #004b8d; /* Darker shade of blue */
+  color: #fff;
+}
+
+/* Dropdown Styles */
+.navbar-nav .dropdown-menu {
+  background-color: #005DAA;
+  border: none;
+}
+
+.navbar-nav .dropdown-item {
+  color: #fff;
+}
+
+.navbar-nav .dropdown-item:hover {
+  background-color: #FFD100;
+  color: #00467f;
+}
+
+/* Ensure the navbar occupies full width and the sign-in button is aligned to the right */
+.navbar-collapse {
+  justify-content: space-between;
+}
+
+/* Adjust dropdown alignment and spacing */
+.navbar-nav .dropdown-item {
+  padding: 10px 20px;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #f5f5f5;
+  padding: 50px;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-left h1 {
+  color: #005DAA;
+  font-size: 3em;
+}
+
+.hero-left p {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.learn-more-button {
+  background-color: #005DAA;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.learn-more-button:hover {
+  background-color: #FFD100;
+  color: #005DAA;
+}
+
+.hero-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* EasyWeb & WebBroker Section */
+.banking-options {
+  padding: 50px 20px; /* Adjusted padding for better responsiveness */
+  background-color: #f9f9f9; /* Slightly lighter background for a cleaner look */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banking-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  justify-content: center; /* Center the cards horizontally */
+}
+
+.banking-card {
+  background-color: #ffffff; /* White background for a more modern look */
+  padding: 30px; /* Increased padding for better content spacing */
+  text-align: center;
+  border: 1px solid #e0e0e0; /* Light gray border for a softer look */
+  border-radius: 12px; /* Slightly larger border radius for a modern card style */
+  width: 100%;
+  max-width: 300px; /* Ensure cards don't get too wide on larger screens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added a subtle shadow by default */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+  margin: 15px; /* Space between cards */
+}
+
+.banking-card:hover {
+  transform: translateY(-8px); /* Enhanced hover effect for better emphasis */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly more pronounced shadow on hover */
+}
+
+.banking-card h3 {
+  color: #005DAA; /* RBC Blue for consistency */
+  margin-bottom: 15px; /* Space between the title and the content */
+  font-size: 1.5em; /* Larger font size for better readability */
+}
+
+.login-button {
+  background-color: #005DAA; /* RBC Blue */
+  color: #ffffff; /* White text for contrast */
+  padding: 12px 25px; /* Increased padding for a more prominent button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em; /* Slightly larger text for readability */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color transition */
+  margin-top: 15px; /* Space between the button and other content */
+}
+
+.login-button:hover {
+  background-color: #FFD100; /* Gold color on hover */
+  color: #005DAA; /* Change text color to match the new background */
+}
+
+/* Links Styling */
+.banking-links {
+  margin-top: 15px; /* Space above the links */
+}
+
+.banking-links a {
+  display: inline-block;
+  margin: 5px; /* Space between links */
+  color: #005DAA;
+  text-decoration: none;
+  font-size: 1em; /* Font size for readability */
+  padding: 10px 20px; /* Padding to make the links look like buttons */
+  border: 2px solid #005DAA; /* Border to mimic button appearance */
+  border-radius: 5px; /* Rounded corners for a button-like appearance */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.banking-links a:hover {
+  background-color: #005DAA; /* Background color on hover */
+  color: #ffffff; /* Text color on hover */
+}
+
+/* Links Styling */
+.banking-links {
+  margin-top: 15px; /* Space above the links */
+}
+
+.banking-links a {
+  display: inline-block;
+  margin: 5px 10px; /* Space between links */
+  color: #005DAA;
+  text-decoration: none;
+  font-size: 1em; /* Font size for readability */
+  padding: 8px 15px; /* Padding to make the links look like buttons */
+  border: 2px solid #005DAA; /* Border to mimic button appearance */
+  border-radius: 5px; /* Rounded corners for a button-like appearance */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.banking-links a:hover {
+  background-color: #005DAA; /* Background color on hover */
+  color: #ffffff; /* Text color on hover */
+}
+/* Additional Links */
+.additional-links {
+  padding: 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.additional-links .link-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.additional-links a {
+  color: #005DAA;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 10px 20px;
+}
+
+.additional-links a:hover {
+  color: #FFD100;
+}
+
+/* Services Grid */
+.services-grid {
+  padding: 50px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+}
+
+.grid-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+  transform: scale(1.1);
+}
+
+.grid-item h3 {
+  color: #005DAA;
+}
+
+.grid-item p {
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  background-color: #005DAA;
+  color: white;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  color: #FFD100;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-right {
+    margin-top: 20px;
+  }
+
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-item {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

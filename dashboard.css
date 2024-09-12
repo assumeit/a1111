@@ -1,0 +1,220 @@
+/* General layout for the dashboard container */
+.dashboard-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f5;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1000px;
+    color: #003087; /* RBC blue */
+  }
+  
+  /* Section for adding new accounts */
+  .account-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .account-section label {
+    font-weight: bold;
+    color: #003087;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .account-section input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .account-section input:focus {
+    outline: none;
+    border-color: #ffcc00; /* RBC yellow */
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #003087;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #ffcc00;
+    color: #003087;
+  }
+  
+  /* Available Accounts Section */
+  ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  ul li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  ul li .account-info {
+    flex-grow: 1;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  /* Fixed button size */
+  ul li button {
+    padding: 8px 16px;
+    background-color: #003087;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 150px;
+    text-align: center;
+  }
+  
+  ul li button:hover {
+    background-color: #ffcc00;
+    color: #003087;
+  }
+  
+  /* Selected account balance */
+  .balance-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .balance-section h2 {
+    color: #003087;
+    font-size: 24px;
+  }
+  
+  .balance-section .balance-value {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-top: 10px;
+  }
+  
+  /* Transaction table */
+  .transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .transaction-table th, .transaction-table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .transaction-table th {
+    background-color: #003087;
+    color: white;
+  }
+  
+  .transaction-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .transaction-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .transaction-table .deposit {
+    color: #28a745;
+  }
+  
+  .transaction-table .withdraw {
+    color: #dc3545;
+  }
+  
+  /* Side-by-side deposit and withdraw forms */
+  .transaction-forms {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .transaction-forms .account-section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .transaction-forms .account-section:last-child {
+    margin-right: 0;
+  }
+  
+  /* Input and transaction buttons in balance section */
+  .account-section input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .account-section input[type="number"]:focus {
+    border-color: #ffcc00;
+  }
+  
+  .account-section button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  /* Error message */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    ul li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .transaction-forms {
+      flex-direction: column;
+    }
+  
+    .transaction-forms .account-section {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
